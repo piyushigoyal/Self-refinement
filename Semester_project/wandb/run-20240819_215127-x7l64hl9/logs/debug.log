@@ -1,0 +1,138 @@
+2024-08-19 21:51:27,362 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Current SDK version is 0.17.1
+2024-08-19 21:51:27,362 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Configure stats pid to 2836076
+2024-08-19 21:51:27,362 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Loading settings from /cluster/home/pgoyal/.config/wandb/settings
+2024-08-19 21:51:27,362 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Loading settings from /cluster/home/pgoyal/main/test/wandb/settings
+2024-08-19 21:51:27,362 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-08-19 21:51:27,362 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-08-19 21:51:27,362 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-08-19 21:51:27,362 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-08-19 21:51:27,362 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-08-19 21:51:27,362 INFO    MainThread:2836076 [wandb_init.py:_log_setup():520] Logging user logs to /cluster/home/pgoyal/main/test/wandb/run-20240819_215127-x7l64hl9/logs/debug.log
+2024-08-19 21:51:27,362 INFO    MainThread:2836076 [wandb_init.py:_log_setup():521] Logging internal logs to /cluster/home/pgoyal/main/test/wandb/run-20240819_215127-x7l64hl9/logs/debug-internal.log
+2024-08-19 21:51:27,362 INFO    MainThread:2836076 [wandb_init.py:init():560] calling init triggers
+2024-08-19 21:51:27,362 INFO    MainThread:2836076 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-08-19 21:51:27,362 INFO    MainThread:2836076 [wandb_init.py:init():585] re-initializing run, found existing run on stack: 9d2ansx3
+2024-08-19 21:51:27,363 INFO    MainThread:2836076 [wandb_run.py:_finish():2109] finishing run eth-piyushi/gemma-sft-lora-socratic/9d2ansx3
+2024-08-19 21:51:27,363 INFO    MainThread:2836076 [jupyter.py:save_history():444] not saving jupyter history
+2024-08-19 21:51:27,363 INFO    MainThread:2836076 [jupyter.py:save_ipynb():372] not saving jupyter notebook
+2024-08-19 21:51:27,363 INFO    MainThread:2836076 [wandb_init.py:_jupyter_teardown():448] cleaning up jupyter logic
+2024-08-19 21:51:27,363 INFO    MainThread:2836076 [wandb_run.py:_atexit_cleanup():2349] got exitcode: 0
+2024-08-19 21:51:27,364 INFO    MainThread:2836076 [wandb_run.py:_restore():2332] restore
+2024-08-19 21:51:27,364 INFO    MainThread:2836076 [wandb_run.py:_restore():2338] restore done
+2024-08-19 21:52:56,959 INFO    MainThread:2836076 [wandb_init.py:init():610] starting backend
+2024-08-19 21:52:56,959 INFO    MainThread:2836076 [wandb_init.py:init():614] setting up manager
+2024-08-19 21:52:56,965 INFO    MainThread:2836076 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: fork
+2024-08-19 21:52:56,965 INFO    MainThread:2836076 [wandb_init.py:init():622] backend started and connected
+2024-08-19 21:52:56,970 INFO    MainThread:2836076 [wandb_run.py:_label_probe_notebook():1334] probe notebook
+2024-08-19 21:52:56,970 INFO    MainThread:2836076 [wandb_run.py:_label_probe_notebook():1344] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-08-19 21:52:56,970 INFO    MainThread:2836076 [wandb_init.py:init():711] updated telemetry
+2024-08-19 21:52:56,971 INFO    MainThread:2836076 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-08-19 21:53:01,505 WARNING MainThread:2836076 [wandb_init.py:init():1175] interrupted
+Traceback (most recent call last):
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1171, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 747, in init
+    result = run_init_handle.wait(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/threading.py", line 629, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/threading.py", line 331, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+2024-08-19 21:53:19,674 INFO    MainThread:2836076 [wandb_settings.py:_apply_login():1911] Applying login settings: {'api_key': '***REDACTED***'}
+2024-08-19 21:53:19,683 INFO    MainThread:2836076 [wandb_settings.py:_apply_login():1911] Applying login settings: {'api_key': '***REDACTED***'}
+2024-08-19 21:53:20,473 INFO    MainThread:2836076 [wandb_settings.py:_apply_login():1911] Applying login settings: {}
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Current SDK version is 0.17.1
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Configure stats pid to 2836076
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Loading settings from /cluster/home/pgoyal/.config/wandb/settings
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Loading settings from /cluster/home/pgoyal/main/test/wandb/settings
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_init.py:_log_setup():520] Logging user logs to /cluster/home/pgoyal/main/test/wandb/run-20240819_215320-2w0822lm/logs/debug.log
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_init.py:_log_setup():521] Logging internal logs to /cluster/home/pgoyal/main/test/wandb/run-20240819_215320-2w0822lm/logs/debug-internal.log
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_init.py:_jupyter_setup():466] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x1480497f6690>
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_init.py:init():560] calling init triggers
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_init.py:init():610] starting backend
+2024-08-19 21:53:20,482 INFO    MainThread:2836076 [wandb_init.py:init():614] setting up manager
+2024-08-19 21:53:20,485 INFO    MainThread:2836076 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: fork
+2024-08-19 21:53:20,486 INFO    MainThread:2836076 [wandb_init.py:init():622] backend started and connected
+2024-08-19 21:53:20,491 INFO    MainThread:2836076 [wandb_run.py:_label_probe_notebook():1334] probe notebook
+2024-08-19 21:53:20,491 INFO    MainThread:2836076 [wandb_run.py:_label_probe_notebook():1344] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-08-19 21:53:20,491 INFO    MainThread:2836076 [wandb_init.py:init():711] updated telemetry
+2024-08-19 21:53:20,492 INFO    MainThread:2836076 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-08-19 21:54:50,555 ERROR   MainThread:2836076 [wandb_init.py:init():770] encountered error: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-08-19 21:54:50,555 ERROR   MainThread:2836076 [wandb_init.py:init():1181] error in wandb.init()
+Traceback (most recent call last):
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1171, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 776, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 90.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2024-08-19 21:55:17,112 INFO    MainThread:2836076 [wandb_settings.py:_apply_login():1911] Applying login settings: {}
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Current SDK version is 0.17.1
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Configure stats pid to 2836076
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Loading settings from /cluster/home/pgoyal/.config/wandb/settings
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Loading settings from /cluster/home/pgoyal/main/test/wandb/settings
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_init.py:_log_setup():520] Logging user logs to /cluster/home/pgoyal/main/test/wandb/run-20240819_215517-n77tknam/logs/debug.log
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_init.py:_log_setup():521] Logging internal logs to /cluster/home/pgoyal/main/test/wandb/run-20240819_215517-n77tknam/logs/debug-internal.log
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_init.py:init():560] calling init triggers
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_init.py:init():610] starting backend
+2024-08-19 21:55:17,121 INFO    MainThread:2836076 [wandb_init.py:init():614] setting up manager
+2024-08-19 21:55:17,123 INFO    MainThread:2836076 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: fork
+2024-08-19 21:55:17,124 INFO    MainThread:2836076 [wandb_init.py:init():622] backend started and connected
+2024-08-19 21:55:17,128 INFO    MainThread:2836076 [wandb_run.py:_label_probe_notebook():1334] probe notebook
+2024-08-19 21:55:17,128 INFO    MainThread:2836076 [wandb_run.py:_label_probe_notebook():1344] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-08-19 21:55:17,128 INFO    MainThread:2836076 [wandb_init.py:init():711] updated telemetry
+2024-08-19 21:55:17,129 INFO    MainThread:2836076 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-08-19 21:55:20,252 WARNING MainThread:2836076 [wandb_init.py:init():1175] interrupted
+Traceback (most recent call last):
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 1171, in init
+    return wi.init()
+           ^^^^^^^^^
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/site-packages/wandb/sdk/wandb_init.py", line 747, in init
+    result = run_init_handle.wait(
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/threading.py", line 629, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/cluster/software/stacks/2024-05/spack/opt/spack/linux-ubuntu22.04-x86_64_v3/gcc-13.2.0/python-3.11.6-m4n2ny4dwaqmeobuqquo3gpyw2bct67i/lib/python3.11/threading.py", line 331, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
